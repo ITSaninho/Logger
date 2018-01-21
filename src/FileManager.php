@@ -95,6 +95,8 @@ class FileManager
 
     public function getAllLog()
     {
+        $this->createFolder();
+
         if ($this->allLogFiles()) {
 
             foreach ($this->allLogFiles() as $value) $log_data[] = file($this->root.$this->path.'/'.$value);
