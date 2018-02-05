@@ -5,33 +5,33 @@ Logger package for Laravel
 To install, run the following in your project directory:
 
 ``` bash
-$ composer require div-art/logger
+$ composer require itsaninho/logger
 ```
 
 Then in `config/app.php` add the following to the `providers` array:
 
 ```
-\DivArt\Logger\LoggerServiceProvider::class,
+\Itsaninho\Logger\LoggerServiceProvider::class,
 ```
 
 Also in config/app.php, add the Facade class to the aliases array:
 
 ```
-'Logger' => \DivArt\Logger\Facades\Logger::class,
+'Logger' => \Itsaninho\Logger\Facades\Logger::class,
 ```
 
 ## Configuration
 To publish Logger's configuration file, run the following `vendor:publish` command:
 
 ```
-php artisan vendor:publish --provider="DivArt\Logger\LoggerServiceProvider"
+php artisan vendor:publish --provider="Itsaninho\Logger\LoggerServiceProvider"
 ```
 
 ## Usage
 **Be sure to include the namespace for the class wherever you plan to use this library**
 
 ```
-use DivArt\Logger\Facades\Logger;
+use Itsaninho\Logger\Facades\Logger;
 ```
 
 Add from ENV file:
